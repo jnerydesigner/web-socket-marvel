@@ -1,6 +1,7 @@
 ![alt text](https://raw.githubusercontent.com/jnerydesigner/web-socket-marvel/nestjs/src/images/data/banner.jpg)
 
-# Project Web in React Page Marvel
+# Project Web in React Page Marvel 
+## Change the themming styled components, using websocket
 
 ## Available Scripts
 
