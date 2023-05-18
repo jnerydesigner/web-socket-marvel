@@ -1,3 +1,7 @@
+<div align="center">
+<img src="" alt="https://github.com/jnerydesigner/web-socket-marvel/blob/nestjs/src/images/data/banner.jpg" style="width: 100%;">
+</div>
+
 # Project Web in React Page Marvel
 
 ## Available Scripts
