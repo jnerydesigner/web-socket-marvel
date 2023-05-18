@@ -1,5 +1,5 @@
 <div align="center">
-<img src="" alt="https://github.com/jnerydesigner/web-socket-marvel/blob/nestjs/src/images/data/banner.jpg" style="width: 100%;">
+<img src="" alt="https://raw.githubusercontent.com/jnerydesigner/web-socket-marvel/nestjs/src/images/data/banner.jpg" style="width: 100%;">
 </div>
 
 # Project Web in React Page Marvel
