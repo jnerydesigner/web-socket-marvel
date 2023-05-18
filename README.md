@@ -1,6 +1,4 @@
-<div align="center">
-<img src="" alt="https://raw.githubusercontent.com/jnerydesigner/web-socket-marvel/nestjs/src/images/data/banner.jpg" style="width: 100%;">
-</div>
+![alt text](https://raw.githubusercontent.com/jnerydesigner/web-socket-marvel/nestjs/src/images/data/banner.jpg)
 
 # Project Web in React Page Marvel
 
