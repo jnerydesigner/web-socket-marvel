@@ -24,9 +24,9 @@ interface MarvelProps {
 
 export function Content() {
   const [marvels, setMarvels] = useState<any[]>([]);
-  const publicKey = "d3d4c96332c02914ba460ab51662f742";
-  const privateKey = "6c83ae9bd2fe030d9e89c6047a55074b6abd9360";
-  const hash = md5(1 + privateKey + publicKey);
+  // const publicKey = "d3d4c96332c02914ba460ab51662f742";
+  // const privateKey = "6c83ae9bd2fe030d9e89c6047a55074b6abd9360";
+  // const hash = md5(1 + privateKey + publicKey);
 
   useEffect(() => {
     handleHeroes();

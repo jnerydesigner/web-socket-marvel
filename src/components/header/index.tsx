@@ -5,6 +5,7 @@ import {
   ContainerTheme,
   ContainerTitle,
   ContainerHeaderMiddle,
+  Loader,
 } from "./styles";
 
 import SwitchComponent from "react-switch";
@@ -53,6 +54,7 @@ export function Header({ onChangeTheme }: PropsHeader) {
         </ContainerLogo>
         <ContainerTitle>
           <h3>Marvel API com Socket</h3>
+          <Loader />
         </ContainerTitle>
         <ContainerTheme>
           {/* <SwitchTheme id="exampleSwitch" label="" checked={isEnabled} />
