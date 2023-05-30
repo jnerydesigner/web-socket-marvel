@@ -1,11 +1,7 @@
-import { ReactNode, createContext } from "react";
+import { createContext } from "react";
 
 export type ThemeContextType = {
   onChangeTheme: () => void;
-};
-
-type UserThemeProps = {
-  children: ReactNode;
 };
 
 export interface IThemeProvider {

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const sizeDivThumb = "140px";
-const colorBorderThumb = "red";
 
 export const ContainerContent = styled.div`
   width: 100%;
@@ -58,6 +57,7 @@ export const CardContainer = styled.div`
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.18);
   border: 1px solid #c67207;
   transition: 0.4s;
+  position: relative;
 
   &:hover {
     cursor: pointer;
@@ -96,6 +96,20 @@ export const ContainerThumb = styled.div`
     height: 100%;
     border-radius: 50%;
   }
+`;
+
+export const BtnLikedContainer = styled.div`
+  height: 120px;
+  width: 120;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+
+  top: -30px;
+  left: 5px;
 `;
 
 export const ListPagination = styled.ul`

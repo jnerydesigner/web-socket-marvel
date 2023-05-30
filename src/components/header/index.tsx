@@ -1,4 +1,4 @@
-import { useContext, useRef, useEffect, useState } from "react";
+import { useContext, useRef, useEffect } from "react";
 import {
   ContainerHeader,
   ContainerLogo,
@@ -10,25 +10,28 @@ import {
 
 import SwitchComponent from "react-switch";
 // import { ThemeContext as ThemeContextFunction } from "../../context";
-import { ThemeContext } from "styled-components";
+import { ThemeContext as ThemeContextStyle } from "styled-components";
 import io, { Socket } from "socket.io-client";
+import { ThemeContext } from "../../context";
 interface PropsHeader {
   onChangeTheme: () => void;
 }
 
 export function Header({ onChangeTheme }: PropsHeader) {
   const socketIORef = useRef<Socket>();
-  const { name, colors } = useContext<any>(ThemeContext);
+  const { name, colors } = useContext<any>(ThemeContextStyle);
+  const { onLiked } = useContext(ThemeContext);
   useEffect(() => {
-    socketIORef.current = io("http://localhost:3001");
+    socketIORef.current = io("http://localhost:3003");
     socketIORef.current.on("connect", () => {
       console.log("Conectou");
     });
 
     socketIORef.current.on("changeThemeProvider", (data) => {
       onChangeTheme();
+      onLiked();
     });
-  }, [onChangeTheme]);
+  }, [onChangeTheme, onLiked]);
 
   return (
     <ContainerHeader>

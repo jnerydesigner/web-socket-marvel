@@ -81,19 +81,19 @@ export const Loader = styled.div`
     20% {
       transform: translateY(-50%) scale(1);
       box-shadow: 0 0 0 4px ${(props) => props.theme.colors.primary}22,
-        0 0 0 10px ${(props) => props.theme.colors.secondary}22,
-        0 0 40px 5px ${(props) => props.theme.colors.secondary},
-        0 0 60px 15px ${(props) => props.theme.colors.secondary};
+        0 0 0 10px ${(props) => props.theme.colors.primary}22,
+        0 0 40px 5px ${(props) => props.theme.colors.primary},
+        0 0 60px 15px ${(props) => props.theme.colors.primary};
     }
     40% {
       transform: translateY(-50%) scale(1) translateX(395px);
     }
     80% {
       transform: translateY(-50%) scale(2) translateX(395px);
-      box-shadow: 0 0 0 4px ${(props) => props.theme.colors.secondary}22,
-        0 0 0 10px ${(props) => props.theme.colors.secondary}22,
-        0 0 40px 5px ${(props) => props.theme.colors.secondary},
-        0 0 60px 15px ${(props) => props.theme.colors.secondary};
+      box-shadow: 0 0 0 4px ${(props) => props.theme.colors.primary}22,
+        0 0 0 10px ${(props) => props.theme.colors.primary}22,
+        0 0 40px 5px ${(props) => props.theme.colors.primary},
+        0 0 60px 15px ${(props) => props.theme.colors.primary};
     }
   }
 
